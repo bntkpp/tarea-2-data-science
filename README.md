@@ -18,5 +18,8 @@ Este proyecto utiliza pandas y numpy para analizar las notas de estudiantes. A c
 **Ejercicio 5:**
 - Se ordenan los estudiantes por su promedio y se muestra el resultado.
 
+**Ejercicio 6:**
+- El promedio del curso general
+
 
 

@@ -21,5 +21,6 @@ else:
         df_estudiantes['aprobados'] = df_estudiantes['notas'].apply(aprobado_seguro)
         aprobados = (df_estudiantes['aprobados'] == 'Aprobado').sum()
 
+        print("ANALISIS DE APROBADOS DE LOS ESTUDIANTES")
         print(df_estudiantes[['nombre', 'aprobados']].to_string(index=False))
         print(f"Cantidad de estudiantes que aprobaron todas sus asignaturas: {aprobados}")

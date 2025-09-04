@@ -19,6 +19,7 @@ else:
                 return "No hay notas"
             
         df_estudiantes['promedio'] = df_estudiantes['notas'].apply(promedio_seguro)
-        promedios_ordenados = df_estudiantes[['nombre', 'promedio']].sort_values(by='promedio').to_string(index=False) # Realiza un sort en base al promedio y almacena el nombre y el promedio del DataFrame
+        promedios_ordenados = df_estudiantes[['nombre', 'promedio']].sort_values(by='promedio', ascending=False).to_string(index=False) # Realiza un sort en base al promedio y almacena el nombre y el promedio del DataFrame
 
+        print("PROMEDIOS ORDENADOS DE LOS ESTUDIANTES (DESCENDENTE)")
         print(promedios_ordenados)
